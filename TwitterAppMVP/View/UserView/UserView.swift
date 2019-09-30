@@ -110,7 +110,6 @@ class UserView: UIViewController, UICollectionViewDelegateFlowLayout {
         
         let vc = segue.destination as! TweetView
         vc.tweet = self.tweetList
-        
     }
 }
 

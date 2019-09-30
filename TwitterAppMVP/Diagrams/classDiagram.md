@@ -18,7 +18,7 @@ class XPresenter {
 +onXResponse(response: Data)
 +onChangeXResponse(response: Data)
 +onXError(message: Bool)
-+init(iXPresenter: ßIXPresenter)
++init(iXPresenter: IXPresenter)
 }
 
 interface IXPresenter {
@@ -35,7 +35,8 @@ interface IXService {
 class XService {
 -iService: IService?
 +init(iService: IService)
--connect(baseUrl: String, method: HTTPMethod, header: Dictionary<String, String>, body: Any?, paremeters: [String:Any]?)
+-getX(List)(baseUrl: String, method: HTTPMethod, header: Dictionary<String, String>, body: Any?, paremeters: [String:Any]?)
+-changeXInfo(baseUrl: String, method: HTTPMethod, header: Dictionary<String, String>, body: Any?, paremeters: [String:Any]?)
 }
 
 interface IService {

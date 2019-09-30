@@ -133,9 +133,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="465"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="f7b-Ev-Sek">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="f7b-Ev-Sek">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="195"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swf-by-LHz">
                                             <rect key="frame" x="42" y="148" width="92" height="94"/>
@@ -188,6 +187,10 @@
                                         </button>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f7b-Ev-Sek" secondAttribute="trailing" id="Qxr-6h-QBS"/>
+                                    <constraint firstAttribute="trailing" secondItem="f7b-Ev-Sek" secondAttribute="trailing" id="iPl-fA-pFs"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="backBtn" destination="YEA-rl-uxB" id="QW6-l0-bot"/>
                                     <outlet property="bioText" destination="nr7-7t-55R" id="EVm-cd-kUK"/>
